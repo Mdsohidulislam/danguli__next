@@ -53,11 +53,11 @@ const Home = () => {
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet"/>
       </Head>  
       <Navbar/>  
-      <button onClick={postFilterNavbar}>Get All data</button>
+      {/* <button onClick={postFilterNavbar}>Get All data</button>
  <button onClick={handlePostMultipleProduct}>Post</button> 
     {
       products.length && <h1>Data Loaded</h1>
-    }
+    } */}
     </div>
   );
 };
