@@ -1,5 +1,4 @@
 const asyncHandler = require('express-async-handler');
-const CheckSchema = require('../model/checkSchema');
 const FilterNavbar = require('../model/filterNavbarMode');
     
 
@@ -11,7 +10,7 @@ const filterNavbarMultiplePost = asyncHandler(async (req, res) => {
     }
 
     try {
-        const response = await CheckSchema.insertMany(data);
+        const response = await  FilterNavbar.insertMany(data);
 
         res.status(200).json({message: 'Successfully products uploaded', response});
         
