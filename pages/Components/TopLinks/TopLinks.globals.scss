@@ -1,0 +1,28 @@
+.category__or__product__link__container{
+    position: relative;
+    margin-bottom: 16px;
+    button , .body__header__middle__arrow{
+        border: none; 
+        background:none;
+        font-weight: 600;
+        color: gray;
+        margin-right: 10px;
+    }
+    .body__header__middle__arrow{
+        position: relative;
+        top: 1px;
+    }
+
+    button:hover, .body__header__middle__arrow{
+        text-decoration: underline;
+    }
+}
+
+.child__top__links__upper__cover{
+    background-color: white; 
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0.7px 2px grey;
+    padding-left: 20px;
+    padding-top: 20px;
+}
