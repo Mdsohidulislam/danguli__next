@@ -13,7 +13,7 @@ const filterNavbarRoute = require('./Routes/filterNavbarRoute');
 dotenv.config();
 connectDatabase();
 
-var whitelist = ['http://localhost:3000', 'http://example2.com']
+var whitelist = [process.env.W_ONE, process.env.W_TWO]
 var corsOptions = {
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1) {
@@ -23,6 +23,8 @@ var corsOptions = {
     }
   }
 }
+
+console.log(process.env.W_TWO);
 // app config apply start
     app.use(bodyParser.urlencoded({extended: true}));
     app.use(bodyParser.json({limit:'500mb'}));
