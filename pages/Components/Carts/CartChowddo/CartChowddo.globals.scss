@@ -1,0 +1,79 @@
+.cart__chowddo__container {
+  position: relative;
+  height: fit-content;
+  width: 280px;
+  background-color: white;
+  padding-bottom: 60px;
+  margin: 10px;
+
+  .image__container {
+    width: 280px;
+    max-height: 280px;
+    position: relative;
+
+    img {
+      width: 280px;
+      max-height: 280px;
+      cursor: pointer;
+    }
+  }
+
+  .info__container {
+    background-color: white;
+    padding: 15px;
+    position: relative;
+
+    .price {
+      position: absolute;
+      top: 20px;
+      font-size: 18px;
+      font-family: sans-serif;
+      right: 15px;
+    }
+    .product__title {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .product__uses {
+      font-size: 16px;
+      margin-top: 5px;
+    }
+  }
+
+  .button__container {
+    width: 150px;
+    height: 45px;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -45px;
+    right: 15px;
+
+    button {
+      height: 45px;
+      border-radius: 45px;
+      border: none;
+      background-color: white;
+      color: black;
+      font-size: 16px;
+      font-weight: 900;
+      width: 45px;
+      box-shadow: 0 0 3px black;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}
+
+.cart__chowddo__container:hover {
+  box-shadow: 0 0 10px black;
+  .button__container {
+    transform: scale(1);
+  }
+}

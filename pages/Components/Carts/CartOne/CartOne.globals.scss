@@ -1,0 +1,133 @@
+.main__cart__container__long__product {
+  height: fit-content;
+  width: 250px;
+  background: white;
+  box-shadow: 0 0 0.5px black;
+  position: relative;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+
+  .container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    .image__container {
+      background-color: white;
+      position: relative;
+      height: 245px;
+      width: 230px;
+      overflow: hidden;
+      margin-bottom: 0px;
+      z-index: 3;
+      img {
+        cursor: pointer;
+        position: relative;
+        max-height: 230px;
+        width: 230px;
+        transition: all 0.3s;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .title__container {
+      background-color: white;
+      display: flex;
+      padding: 0 5px;
+      position: relative;
+
+      z-index: 4;
+
+      .left__container {
+        width: 150px;
+        .new {
+          background-color: rgb(0, 0, 0);
+          display: inline-block;
+          height: 17px;
+          margin-right: 3px;
+          width: 4px;
+        }
+        p {
+          height: 20px;
+          font-size: 16px;
+          font-weight: 900;
+          display: flex;
+          align-items: center;
+        }
+      }
+      .right__container {
+        width: 80px;
+        p {
+          font-size: 16px;
+          font-weight: 900;
+        }
+      }
+    }
+
+    .inf__body {
+      position: relative;
+      transition: top 0.3s;
+      top: 0px;
+
+      .intro__container {
+        padding: 8px 8px 10px 8px;
+        .title {
+          font-size: 15px;
+        }
+
+        .brand {
+          font-size: 12px;
+          margin-top: 10px;
+          font-weight: 600;
+        }
+      }
+
+      .button__container {
+        background: rgb(235, 235, 235);
+        width: 100%;
+        display: grid;
+        height: 45px;
+        grid-template-columns: auto auto auto;
+        position: absolute;
+        bottom: -45px;
+        right: 0;
+        // margin: 20px;
+
+        button {
+          background: rgb(218, 218, 218);
+          border: none;
+          border-right: 1px solid black;
+          cursor: pointer;
+        }
+        button:last-child {
+          border-right: none;
+        }
+        button:hover {
+          background: rgb(83, 83, 83);
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.main__cart__container__long__product:hover {
+  box-shadow: 0 0 3px black;
+
+  .container {
+    .image__container {
+      img {
+        position: relative;
+        max-height: 250px;
+        width: 250px;
+      }
+    }
+    .inf__body {
+      top: -45px;
+    }
+  }
+}
