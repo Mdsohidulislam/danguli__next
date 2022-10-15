@@ -25,9 +25,13 @@ var corsOptions = {
 }
 
 app.get('/',(req ,res) =>{
-  res.status(200).send('<h1>Hello world</h1>')
+  res.status(200).send('<h1>Hello world  gonneeeeeeeeeeeeeeeeeeeeeeeee</h1>')
 })
-  
+
+app.get('/post', (req ,res) => {
+  res.status(200).send('hello post api')
+})
+
 // app config apply start
     app.use(bodyParser.urlencoded({extended: true}));
     app.use(bodyParser.json({limit:'500mb'}));
