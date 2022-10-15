@@ -24,6 +24,8 @@ var corsOptions = {
   }
 }
 
+
+
 app.get('/',(req ,res) =>{
   res.status(200).send('<h1>Hello world  gonneeeeeeeeeeeeeeeeeeeeeeeee</h1>')
 })
@@ -36,6 +38,13 @@ app.get('/post', (req ,res) => {
     app.use(bodyParser.urlencoded({extended: true}));
     app.use(bodyParser.json({limit:'500mb'}));
     app.use(cors(corsOptions));
+    app.use(function(req, res, next){
+      req.setTimeout(500000, function(){ 
+        res.status(408);
+        throw new Error('Response Time Out')
+      });
+      next();
+  });
 // app config apply end
 
 
