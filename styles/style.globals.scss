@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.all__category__view__next__container__next__prev{
+    position: relative; 
+    min-height: 100vh;
+    width: 100%; 
+    padding: 40px;
+    .container__all__category{
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: auto auto auto auto auto auto auto auto;
+        
+        .all__category__button{
+            font-size: 12px;
+            font-weight: 600;
+            color: grey;
+        }
+    }
+}
