@@ -51,7 +51,7 @@ export default function Home() {
           </a>
         </div>
       </main>
-
+    <img src='https://secure.gravatar.com/avatar/a32bc69097d4dbd3d4d0eabd6027f410?s=72&d=mm&r=g' alt='hgo'/>
       <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -62,6 +62,7 @@ export default function Home() {
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
+
         </a>
       </footer>
     </div>
