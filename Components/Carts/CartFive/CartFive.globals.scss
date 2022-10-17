@@ -1,0 +1,131 @@
+.cart__five__container {
+  width: 280px;
+  background-color: white;
+  position: relative;
+  border: 1px solid rgb(172, 172, 172);
+  padding: 10px;
+  height: fit-content;
+  overflow: hidden;
+  margin: 10px;
+
+  .image__container {
+    position: relative;
+    width: 260px;
+    height: 260px;
+
+    img {
+      position: relative;
+      width: 100%;
+      max-height: 100%;
+      cursor: pointer;
+    }
+  }
+  .open__info__container,
+  .close__info__container {
+    background-color: white;
+    padding: 15px 10px;
+    .product__title {
+      font-size: 20px;
+      font-weight: 900;
+    }
+    .product__details {
+      font-size: 14px;
+      text-align: justify;
+      margin-top: 5px;
+    }
+    .price {
+      font-size: 18px;
+      margin-top: 5px;
+      font-weight: 600;
+    }
+
+    .open__button__container {
+      box-sizing: border-box;
+      margin-top: 10px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 10px;
+      height: 40px;
+      position: relative;
+      left: -5px;
+
+      button {
+        border: none;
+        outline: none;
+        height: 45px;
+        font-size: 17px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+      .more {
+        background-color: white;
+        border: 2px solid black;
+      }
+      .more:hover {
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+      }
+      .add {
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+      }
+      .add:hover {
+        background-color: white;
+        border: 2px solid black;
+        color: black;
+      }
+    }
+
+    .open__button__container__hide {
+      margin-top: 10px;
+      display: grid;
+      grid-gap: 10px;
+      height: 40px;
+      grid-template-columns: auto auto auto;
+
+      button {
+        border: none;
+        outline: none;
+        height: 45px;
+        font-size: 17px;
+        text-transform: uppercase;
+        cursor: pointer;
+        background-color: white;
+        border: 2px solid black;
+      }
+      button:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+
+  .close__info__container {
+    padding-top: 60px;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    z-index: 10;
+    transition: all 0.3s;
+
+    .close__info__button {
+      height: 35px;
+      width: 35px;
+      background-color: white;
+      border: none;
+      border-radius: 50%;
+      box-shadow: 0 0 3px black;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  }
+
+  .close__info__container.active {
+    bottom: 0 !important;
+  }
+}

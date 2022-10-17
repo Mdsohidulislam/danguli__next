@@ -1,0 +1,57 @@
+.loading__container {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5000;
+  .loading__cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba($color: #000000, $alpha: 0);
+  }
+  img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.hot__loader__icon {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  z-index: 5001;
+}
+
+.loading__container__small {
+  position: relative;
+  width: 100%;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5;
+  .loading__cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+}
+
+.final__loading__next__container{
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  z-index: 55;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
