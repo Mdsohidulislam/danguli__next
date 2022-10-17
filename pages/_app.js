@@ -15,6 +15,7 @@ import '../Components/SearchBarContainer/SearchBarContainer.globals.scss';
 import '../Components/TopNavbar/TopNavbar.globals.scss'
 import axios from 'axios';
 import '../Components/FilterNavbar/FilterNavbar.globals.scss';
+import '@fortawesome/fontawesome-svg-core/styles.css'
 import '../Components/Footer/Footer.globals.scss';
 import '../Components/Loading/loading.globals.scss';
 import '../Components/ProductTopHeader/ProductTopHeader.globals.scss';
