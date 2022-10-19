@@ -9,11 +9,13 @@ const dotenv = require('dotenv');
 const { connectDatabase } = require('./config/connectdb');
 const { NotFound, ErrorHandler } = require('./ErrorHandling/Error');
 const productRouter = require('./Routes/productRoute');
-const filterNavbarRoute = require('./Routes/filterNavbarRoute');
+const filterNavbarRoute = require('./Routes/filterNavbarRoute'); 
+const { promotionRoute } = require('./Routes/promotionRoute');
+
 dotenv.config();
 connectDatabase();
 
-var whitelist = [process.env.W_ONE, process.env.W_TWO]
+var whitelist = [process.env.W_ONE, process.env.W_TWO, process.env.W_THREE, process.env.W_FOUR, process.env.W_FIVE]
 var corsOptions = {
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1) {
@@ -49,8 +51,13 @@ app.get('/post', (req ,res) => {
 
 
 
+
+
+
+
 app.use('/api/product', productRouter);
 app.use('/api/filter__navbar', filterNavbarRoute);
+app.use('/api/promotion', promotionRoute);
 app.use(NotFound);
 app.use(ErrorHandler); 
 
