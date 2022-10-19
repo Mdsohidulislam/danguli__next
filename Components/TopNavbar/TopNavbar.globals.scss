@@ -1,0 +1,56 @@
+.top__navbar__container {
+  position: relative;
+  z-index: 100;
+  height: fit-content;
+
+  width: 100%;
+  background-color: black;
+  transition: all 0.3s;
+  left: 0;
+  padding: 10px 0;
+}
+
+.top__navbar__container.open {
+  position: fixed !important;
+  top: -75px;
+  left: 0;
+}
+
+.top__small__navbar__container.open {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+}
+
+.top__small__navbar__container {
+  background-color: black;
+  display: none;
+  flex-direction: column;
+  padding: 8px;
+  position: relative;
+  z-index: 200;
+  width: 100%;
+
+  .top__navbar {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+  }
+
+  .search__bar {
+    margin-top: 5px;
+  }
+}
+
+.open__menu__bar {
+  display: inline;
+}
+@media only screen and (max-width: 765px) {
+  .top__navbar__container {
+    padding: 0;
+  }
+
+  .top__small__navbar__container {
+    display: flex;
+  }
+}

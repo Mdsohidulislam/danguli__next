@@ -1,0 +1,33 @@
+.home__view__image__view__container {
+  position: relative; 
+  width: 100%; 
+  .container__home__next { 
+    position: relative;
+    width: 100%;
+    display: grid;  
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+
+    .grid__item {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      transition: all 0.7s;
+      border-radius: 10px;
+
+      img {
+        position: relative;
+        width: 100%;
+        cursor: pointer;
+        transform: scale(1);
+        transition: all 0.7s;
+      }
+    }
+    .grid__item:hover {
+      box-shadow: 0 0 10px blue;
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

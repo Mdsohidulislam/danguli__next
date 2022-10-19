@@ -1,0 +1,155 @@
+.products__header__navbar {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 50%;
+
+  box-sizing: border-box;
+  grid-gap: 10px;
+  height: fit-content;
+  margin-bottom: 20px;
+  justify-content: space-between;
+
+  div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
+
+.my__store__single__search__container {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  input {
+    position: relative;
+    width: 100%;
+    font-size: 15px;
+    padding: 8px;
+    outline: none;
+    border: 2px solid #761bcc;
+    padding: 10px;
+    box-sizing: border-box;
+    padding-right: 85px;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 8px 32px;
+    border: none;
+    outline: none;
+    background-color: #761bcc;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    height: 100%;
+  }
+}
+
+.my__store__sort__container {
+  position: relative;
+  width: 100%;
+  background-color: red;
+  height: 100%;
+
+  select {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    font-size: 15px;
+    border: 2px solid #761bcc;
+    outline: none;
+
+    option {
+      font-size: 15px;
+    }
+  }
+
+  select:first-child {
+    border-right: none;
+  }
+}
+
+.list__view__container {
+  position: relative;
+  height: 100%;
+  background-color: aqua;
+  width: fit-content;
+
+  button {
+    position: relative;
+    height: 100%;
+    font-size: 20px;
+    padding: 0 15px;
+    border: none;
+    outline: none;
+    background-color: #761bcc;
+    color: white;
+  }
+
+  button:hover {
+    background-color: #a755f3;
+    cursor: pointer;
+  }
+}
+
+.next__prev__container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  width: 100%;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 5px 0;
+  button {
+    height: 100%;
+    position: relative;
+    border: none;
+    outline: none;
+    background-color: #761bcc;
+    color: white;
+    cursor: pointer;
+  }
+  .dis {
+    background-color: #ccc;
+    color: grey;
+    cursor: not-allowed;
+  }
+  p {
+    text-transform: uppercase;
+  }
+}
+
+.list__view__grid {
+  background-color: #a755f3 !important;
+}
+
+.MuiPaper-root{
+  padding: 0 !important;
+  .next__prev__mui{
+    background-color: #761BCC !important;
+    margin: 0;
+  }
+}
+
+.pagination__next__container{
+  position: relative; 
+  padding: 20px 0;
+  display: flex;
+  justify-content: center; 
+  
+  .MuiPagination-root{
+    position: relative;   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+}
