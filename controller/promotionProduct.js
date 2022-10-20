@@ -51,13 +51,13 @@ const promotionProductPost = asyncHandler(async (req, res) =>{
 
 const singlePromotionGet = asyncHandler(async(req, res) => {
     let name = req.headers.promotion__name;
-    
+
     if(!name){
         res.status(400);
         throw new Error('Please Enter Promotion Name')
     }
     try {
-        let promotion = await PromotionProduct.findOne({promotion__name: name});
+        let promotion = await PromotionProduct.findOne({promotion__name: name.replace(/underScore/g,'__')});
 
         if(promotion.promotion__name){
             let data =  await Product.find({ '_id': { $in: promotion.product__ides } }); 
