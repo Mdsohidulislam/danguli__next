@@ -1,0 +1,49 @@
+.home__carousel__contianer {
+  position: relative;
+  height: fit-content;
+  width: 100% !important;
+  margin: 0;
+  padding: 0 !important;
+  .carousel__navbar {
+    position: absolute;
+    z-index: 30;
+    left: 30px;
+  }
+  .my__react__carousel__style {
+    position: relative !important;
+    height: fit-content;
+    width: 100%;
+
+    div {
+      position: relative !important;
+      height: 330px;
+      width: 100%;
+
+      img {
+        position: relative;
+        height: 330px;
+        cursor: pointer !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .home__carousel__contianer {
+    height: 100%;
+
+    .carousel__navbar {
+      display: none;
+    }
+    .my__react__carousel__style {
+      height: fit-content;
+      div {
+        height: fit-content;
+        img {
+          height: fit-content;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
