@@ -47,11 +47,11 @@ function MyApp({ Component, pageProps }) {
   const [totalHearts, setTotalHearts]  = useState({cart: [], ides: [], quantity: 0, total__whole__price: 0, total__current__price: 0, total__interest__price: 0}) 
   const [rowActive,  setRowActive] = useState(false);  
   const [prevCurrentPageAllProducts, setPrevCurrentPageAllProducts] = useState([]);
-//   const [serverPort, setServrePort]  = useState('https://danguli.herokuapp.com');
-  const [serverPort, setServrePort]  = useState('http://localhost:7000');
-  const [imagePort, setImagePort]  = useState('http://localhost:3009');
-//   const [imagePort, setImagePort]  = useState('http://danguli.tnrsoft.com')
-//   const [imagePort, setImagePort]  = useState('http://danguli.tnrsoft.com')
+   const [serverPort, setServrePort]  = useState('https://danguli.herokuapp.com');
+  //const [serverPort, setServrePort]  = useState('http://localhost:7000');
+  //const [imagePort, setImagePort]  = useState('http://localhost:3009');
+    const [imagePort, setImagePort]  = useState('http://danguli.tnrsoft.com')
+    //const [imagePort, setImagePort]  = useState('http://danguli.tnrsoft.com')
   const [links, setLinks] = useState([]) 
   const [showWeb, setShowWeb] = useState(false) 
   const [topCategoryCollection, setTopCategoryCollection] = useState([]) 
