@@ -1,7 +1,7 @@
 import React from 'react'; 
-// import SearchBarContainer from '../SearchBarContainer/SearchBarContainer';
+import SearchBarContainer from '../SearchBarContainer/SearchBarContainer';
 import SideNavbar from '../SideNavbar/SideNavbar';
-// import TopSmallNavbar from '../TopNavbar/TopSmallNavbar';
+import TopSmallNavbar from '../TopNavbar/TopSmallNavbar';
 
 const Navbar = () => {
 
@@ -21,8 +21,8 @@ const Navbar = () => {
   },[])
   return (
     <div>
-      {/* <TopSmallNavbar/>
-      <SearchBarContainer/>  */}
+      <TopSmallNavbar/>
+      <SearchBarContainer/> 
       <SideNavbar/>
     </div>
   );
