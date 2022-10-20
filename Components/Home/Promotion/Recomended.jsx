@@ -12,7 +12,7 @@ const Recommended = () => {
     const {serverPort} = useContext(AppContext)
     let promotion__name = 'recommended';
     useEffect(()=>{
-        axios.get(serverPort+'/api/promotion/single__promotion__get',{headers:{promotion__name: 'recommended'.replace(/__/g,'underScore')}})
+        axios.get(serverPort+'/api/promotion/single__promotion__get',{headers:{promotion: 'recommended'}})
         .then(res => { 
             if(res.data.status__code === 200){
                 let sProducts  = res.data.products;

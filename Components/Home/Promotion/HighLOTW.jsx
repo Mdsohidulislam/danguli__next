@@ -12,7 +12,7 @@ const HighLOTW = () => {
     const {serverPort} = useContext(AppContext);
     let promotion__name = 'high__light__of__the__week';
     useEffect(()=>{
-        axios.get(serverPort+'/api/promotion/single__promotion__get',{headers:{promotion__name: 'high__light__of__the__week'.replace(/__/g,'underScore')}})
+        axios.get(serverPort+'/api/promotion/single__promotion__get',{headers:{promotion: 'high__light__of__the__week'}})
         .then(res => { 
             if(res.data.status__code === 200){
                 let sProducts  = res.data.products;

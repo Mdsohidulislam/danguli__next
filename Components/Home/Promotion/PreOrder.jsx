@@ -12,7 +12,7 @@ const PreOrder = () => {
     const {serverPort} = useContext(AppContext)
     let promotion__name = 'pre__order';
     useEffect(()=>{
-        axios.get(serverPort+'/api/promotion/single__promotion__get',{headers:{promotion__name: 'pre__order'.replace(/__/g,'underScore')}})
+        axios.get(serverPort+'/api/promotion/single__promotion__get',{headers:{promotion: 'pre__order'}})
         .then(res => { 
             if(res.data.status__code === 200){
                 let sProducts  = res.data.products;

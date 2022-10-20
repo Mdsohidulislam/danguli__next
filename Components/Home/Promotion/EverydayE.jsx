@@ -12,7 +12,7 @@ const EverydayE = () => {
     const {serverPort} = useContext(AppContext)
     let promotion__name = 'everyday__essentials';
     useEffect(()=>{
-        axios.get(serverPort+'/api/promotion/single__promotion__get',{headers:{promotion__name: 'everyday__essentials'.replace(/__/g,'underScore')}})
+        axios.get(serverPort+'/api/promotion/single__promotion__get',{headers:{promotion: 'everyday__essentials'}})
         .then(res => { 
             if(res.data.status__code === 200){
                 let sProducts  = res.data.products;

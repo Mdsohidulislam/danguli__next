@@ -10,7 +10,7 @@ const UpgradeUGS = () => {
     const {serverPort} = useContext(AppContext)
     let promotion__name = 'upgrade__your__gaming__station';
     useEffect(()=>{
-        axios.get(serverPort+'/api/promotion/single__promotion__get',{headers:{promotion__name: 'upgrade__your__gaming__station'.replace(/__/g,'underScore')}})
+        axios.get(serverPort+'/api/promotion/single__promotion__get',{headers:{promotion: 'upgrade__your__gaming__station'}})
         .then(res => { 
             if(res.data.status__code === 200){
                 let sProducts  = res.data.products;

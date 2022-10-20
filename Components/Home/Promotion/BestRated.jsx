@@ -12,7 +12,7 @@ const BestRated = () => {
     const {serverPort} = useContext(AppContext)
     let promotion__name = 'best__rated';
     useEffect(()=>{
-        axios.get(serverPort+'/api/promotion/single__promotion__get',{headers:{promotion__name: promotion__name.replace(/__/g,'underScore')}})
+        axios.get(serverPort+'/api/promotion/single__promotion__get',{headers:{promotion: promotion__name}})
         .then(res => { 
             if(res.data.status__code === 200){
                 let sProducts  = res.data.products;

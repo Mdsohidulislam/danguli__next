@@ -46,7 +46,7 @@ const SingleOfferView = ({infos}) => {
     const handleGetCurrentPageAllProduct = () => {
         setShowCount(()=>40);
         setViewCount(()=>40); 
-        axios.get(serverPort+'/api/promotion/single__promotion__get',{headers:{promotion__name: promotion__name.replace(/__/g,'underScore')}}).then(res => { 
+        axios.get(serverPort+'/api/promotion/single__promotion__get',{headers:{promotion: promotion__name}}).then(res => { 
             if(res.data.status__code === 200){
                     let {products,  filterNavbar} = res.data;    
                     products = products.sort(()=> Math.random() - 0.5)      

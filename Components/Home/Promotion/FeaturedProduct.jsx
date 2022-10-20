@@ -12,7 +12,7 @@ const FeaturedProducts = () => {
     const {serverPort} = useContext(AppContext)
     let promotion__name = 'featured__products';
     useEffect(()=>{
-        axios.get(serverPort+'/api/promotion/single__promotion__get',{headers:{promotion__name: 'featured__products'.replace(/__/g,'underScore')}})
+        axios.get(serverPort+'/api/promotion/single__promotion__get',{headers:{promotion: 'featured__products'}})
         .then(res => { 
             if(res.data.status__code === 200){
                 let sProducts  = res.data.products;
