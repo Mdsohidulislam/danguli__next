@@ -1,0 +1,108 @@
+.filter__navbar__container {
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+  border: 0.5px solid #761bcc;
+  .head {
+    background-color: #761bcc;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 10px 8px 15px;
+    color: white;
+    margin: 0;
+  }
+  form {
+    button {
+      position: absolute;
+    }
+
+    input {
+      position: relative;
+      width: 100%;
+      padding: 8px 10px;
+    }
+  }
+  .filter__navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    .filter__navbar__items__container {
+      .filter__navbar__title {
+        margin: 0;
+        padding: 8px 10px 8px 12px;
+        background-color: white;
+        border-bottom: 2px solid #761bcc;
+        font-weight: 600;
+        position: relative;
+        cursor: pointer;
+        font-size: 14px;
+        .show__or__hidden {
+          position: absolute;
+          right: 10px;
+          transition: all 0.8s;
+        }
+        .plus {
+          display: inline;
+          cursor: pointer;
+        }
+        .minus {
+          display: none;
+          cursor: pointer;
+        }
+      }
+      .filter__navbar__items {
+        margin: 0 0 0 0px;
+        padding: 0;
+        background-color: white;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.8s;
+        li {
+          list-style: none;
+          color: grey;
+          position: relative;
+          width: 100%;
+          border-bottom: 0.5px solid #761bcc;
+          display: grid;
+          grid-template-columns: 25px auto;
+
+          font-size: 12px;
+          label {
+            position: relative;
+            width: 100%;
+            padding: 10px;
+            cursor: pointer;
+
+            .quantity {
+              color: black;
+              padding: 4px;
+              position: absolute;
+              top: 5px;
+              right: 10px;
+              cursor: pointer;
+            }
+          }
+          input {
+            height: 15px;
+            width: 15px;
+            margin-left: 10px;
+            cursor: pointer;
+            position: relative;
+            top: 9.5px;
+          }
+        }
+        li:hover {
+          background-color: #eee;
+        }
+      }
+    }
+  }
+}
+
+.filter__navbar__title.active {
+}
+
+
+.next__filter__navbar__container{
+  max-width: 300px;
+}

@@ -1,0 +1,30 @@
+.owener__features__container {
+  position: relative;
+  width: 100%;
+  .help__anywhere__container {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    .any__item {
+      position: relative;
+      width: 100%;
+      border-radius: 3px;
+      overflow: hidden;
+      img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 0 3px black;
+        cursor: pointer;
+        transform: scale(1);
+        transition: all 0.7s;
+      }
+      img:hover {
+        box-shadow: 0 0 12px blue;
+        transform: scale(1.1);
+      }
+    }
+  }
+}

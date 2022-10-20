@@ -1,0 +1,43 @@
+.left__title__container {
+  position: relative;
+  h1 {
+    font-family: sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: rgb(30, 20, 40);
+    margin-bottom: 20px;
+  }
+}
+.final__landing__page__container__with__production {
+  padding: 30px;
+}
+.best__rated__container {
+  padding-top: 20px;
+}
+@media only screen and (max-width: 1000px) {
+  .left__title__container {
+    h1 {
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .left__title__container {
+    h1 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .left__title__container {
+    h1 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+  }
+}

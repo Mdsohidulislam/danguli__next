@@ -1,0 +1,38 @@
+.TopRowHeaderTitleWithBorder__container {
+  position: relative;
+  height: 74px; 
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-bottom: 30px;
+  h2{
+    text-transform: uppercase;
+  }
+  .info__container {
+    box-sizing: border-box;
+    position: absolute;
+    padding: 10px 50px;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .bottom__stroke {
+      height: 3px;
+      width: 170px;
+      margin-top: 17px;
+    }
+  }
+  .border__stroke {
+    position: relative;
+    width: 100%;
+    height: 3px;
+  }
+}
+
+.TopRowHeaderTitleWithBorder__container__border__bottom{
+  @extend .TopRowHeaderTitleWithBorder__container;
+  margin: 0 0 50px 0;
+}
