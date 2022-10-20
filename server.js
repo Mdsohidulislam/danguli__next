@@ -29,7 +29,7 @@ var corsOptions = {
 
 
 app.get('/',(req ,res) =>{
-  res.status(200).send('<h1>Hello world  gonneeeeeeeeeeeeeeeeeeeeeeeee</h1>')
+  res.status(200).send('<h1>Hello world Home Updated</h1>')
 })
 
 app.get('/post', (req ,res) => {
