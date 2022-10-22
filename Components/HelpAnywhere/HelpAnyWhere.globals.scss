@@ -1,0 +1,31 @@
+.help__any__where__container {
+  position: relative;
+  width: 100%;
+  .help__anywhere__container {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    .any__item {
+      position: relative;
+      width: 100%;
+      img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        box-shadow: 0 0 3px black;
+        cursor: pointer;
+        transform: scale(1);
+        transition: all 0.7s;
+      }
+      img:hover {
+        box-shadow: 0 0 12px blue;
+        transform: scale(1.01);
+      }
+    }
+    .item__left {
+      padding-right: 25px;
+    }
+  }
+}

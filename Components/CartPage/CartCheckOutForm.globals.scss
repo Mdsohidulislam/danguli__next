@@ -1,0 +1,75 @@
+.checkout__and__voucher__container {
+  position: relative;
+  height: fit-content;
+  width: 100%;
+
+  .total__price {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    p {
+      font-size: 16px;
+      font-weight: 900;
+    }
+  }
+  .voucher__form {
+    background-color: white;
+    padding: 10px 0;
+    position: relative;
+    input {
+      padding: 10px;
+      position: relative;
+      width: 100%;
+      border: 2px solid rgb(118, 27, 204);
+      font-size: 14px;
+      font-weight: 600;
+      outline: none;
+    }
+    button {
+      @extend input;
+      width: 100px;
+      border: none;
+      background-color: rgb(118, 27, 204);
+      border: 2px solid rgb(118, 27, 204);
+      color: white;
+      position: absolute;
+      right: 0;
+      top: 10px;
+      cursor: pointer;
+    }
+  }
+
+  .checkout__button {
+    padding: 10px;
+    background-color: rgb(118, 27, 204);
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .continue__shopping__button {
+    padding: 10px;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 8px;
+    cursor: pointer;
+    background-color: rgb(118, 27, 204);
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .w__next__100{
+    border: none;
+    width: 100%;
+  }
+}
+
+.btn__next__center{
+  border: none;
+  background: none;
+}
