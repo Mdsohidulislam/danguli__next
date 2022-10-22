@@ -56,10 +56,10 @@ function MyApp({ Component, pageProps }) {
     const [rowActive,  setRowActive] = useState(false);  
     const [prevCurrentPageAllProducts, setPrevCurrentPageAllProducts] = useState([]);
     const [cLoading, setCLoading] = useState(false); 
-    const [serverPort, setServrePort]  = useState('http://localhost:7000');
-    const [imagePort, setImagePort]  = useState('http://localhost:3009');
-    //  const [serverPort, setServrePort]  = useState('https://danguli.herokuapp.com');
-    // const [imagePort, setImagePort]  = useState('http://danguli.tnrsoft.com')
+    // const [serverPort, setServrePort]  = useState('http://localhost:7000');
+    // const [imagePort, setImagePort]  = useState('http://localhost:3009');
+     const [serverPort, setServrePort]  = useState('https://danguli.herokuapp.com');
+    const [imagePort, setImagePort]  = useState('http://danguli.tnrsoft.com')
     //const [imagePort, setImagePort]  = useState('http://danguli.tnrsoft.com')
     useEffect(()=>{
         let userKey = localStorage.getItem('user__key');
